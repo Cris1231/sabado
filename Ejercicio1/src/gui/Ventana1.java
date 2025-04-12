@@ -76,13 +76,13 @@ public class Ventana1 extends JFrame implements ActionListener {
 		}
 		{
 			textCod = new JTextField();
-			textCod.setBounds(142, 38, 126, 20);
+			textCod.setBounds(142, 50, 126, 20);
 			contentPane.add(textCod);
 			textCod.setColumns(10);
 		}
 		{
 			textNom = new JTextField();
-			textNom.setBounds(142, 81, 126, 20);
+			textNom.setBounds(142, 95, 126, 20);
 			contentPane.add(textNom);
 			textNom.setColumns(10);
 		}
@@ -98,20 +98,20 @@ public class Ventana1 extends JFrame implements ActionListener {
 		}
 		{
 			textNota1 = new JTextField();
-			textNota1.setBounds(142, 126, 126, 20);
+			textNota1.setBounds(142, 133, 126, 20);
 			contentPane.add(textNota1);
 			textNota1.setColumns(10);
 		}
 		{
 			textNota2 = new JTextField();
-			textNota2.setBounds(142, 164, 126, 20);
+			textNota2.setBounds(142, 169, 126, 20);
 			contentPane.add(textNota2);
 			textNota2.setColumns(10);
 		}
 		{
 			btnNewButton = new JButton("Reportar");
 			btnNewButton.addActionListener(this);
-			btnNewButton.setBounds(334, 37, 89, 43);
+			btnNewButton.setBounds(334, 55, 89, 43);
 			contentPane.add(btnNewButton);
 		}
 		{
@@ -126,6 +126,7 @@ public class Ventana1 extends JFrame implements ActionListener {
 			contentPane.add(scrollPane);
 			{
 				textS = new JTextArea();
+				textS.setText("Reporte de alumno y calificaciones");
 				scrollPane.setViewportView(textS);
 			}
 		}
@@ -138,8 +139,13 @@ public class Ventana1 extends JFrame implements ActionListener {
 		{
 			btnNewButton_3 = new JButton("Eliminar");
 			btnNewButton_3.addActionListener(this);
-			btnNewButton_3.setBounds(467, 37, 89, 43);
+			btnNewButton_3.setBounds(467, 70, 89, 43);
 			contentPane.add(btnNewButton_3);
+		}
+		{
+			lblNewLabel_4 = new JLabel("Reporte de estudiante y Rendimiento");
+			lblNewLabel_4.setBounds(178, 11, 202, 16);
+			contentPane.add(lblNewLabel_4);
 		}
 	}
 	public void actionPerformed(ActionEvent e) {
@@ -159,6 +165,7 @@ public class Ventana1 extends JFrame implements ActionListener {
 	ArregloEstudiante ae = new ArregloEstudiante();
 	private JButton btnNewButton_2;
 	private JButton btnNewButton_3;
+	private JLabel lblNewLabel_4;
 	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
 		textS.setText("");
 		Listado();
